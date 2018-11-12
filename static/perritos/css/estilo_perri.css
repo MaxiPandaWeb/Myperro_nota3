@@ -1,0 +1,449 @@
+header div{
+background-color:#3eca97; 
+  
+}
+
+    
+body {
+    background-color:#39bb8c; 
+    padding-top: 70px;  
+    margin-bottom: -25px;  
+    
+    }
+
+h1{
+        background-color:#39bb8c;   
+}    
+
+#ralla{
+
+    background-color: white;
+
+}
+#ralla1{
+
+    background-color: white;
+
+}
+#ralla2{
+
+    background-color: white;
+}
+
+#logo{
+padding-left: 10%;
+
+}
+#add
+{
+    width: 25px;
+    height:25px;
+    display: inline;
+}
+#myNavbar{
+
+    padding-left: 35%;
+}
+#perrofeo{
+
+    margin-top: 10%;
+}
+
+
+#iconos {
+    display:flex;
+
+    }
+  #iconos div {
+        margin:0 auto;
+        
+    }
+#izquierdo{
+
+    
+    width: 100%;
+    height:100%;
+}
+#derecho{
+
+  
+    width: 100%;
+    height:100%;
+}
+#cajaperro2{
+    display: block;
+}
+#articulo2{
+
+    width: 100%;
+    height:100%;
+    background-color:#39bb8c;   
+}
+#articulo{
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 100%;
+    height:100%;
+    
+}
+footer{
+    background-color: gray;
+    margin-bottom: 20px;
+    color: black;
+}
+
+section{
+
+    margin-bottom: 15px;
+}
+#boton {
+    display: inline-block;
+    border-radius: 6px;
+    border :2px solid black;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    width: 110px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+ #boton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#boton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+#boton:hover span {
+    padding-right: 25px;
+  }
+  
+#boton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #cajaperro2 {
+    line-height: 0;
+     
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;  
+  }
+  
+  #cajaperro2 img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  @media (max-width: 1200px) {
+    #cajaperro2 {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #cajaperro2 {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #cajaperro2 {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 400px) {
+    #cajaperro2 {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
+  @media (max-width: 1180px){
+    #formu{
+
+    }
+  }
+
+#esperanza{
+
+    color:black;
+}
+
+#formu{
+    border-style: solid;
+    margin: auto;
+}
+
+#formu{
+    margin: auto;
+    border-style: solid;
+    background-color: #159c64;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: center;
+    max-width: 500px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#formnuevo{
+    margin: auto;
+    border-style: solid;
+    background-color: #159c64;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: center;
+    max-width: 500px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+#esperanza{
+
+    color:black;
+}
+
+#cajaquienes{
+
+    background-color: #0B6138;
+}
+#txt{
+
+    background-color: #F5A9F2;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid #BCF5A9;
+    border-radius: 12px;
+}
+
+#ac_nuevo{
+    background: -moz-linear-gradient(top, #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+
+}
+
+#ac_nuevo{
+    background: -moz-linear-gradient(top, #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+
+}
+
+
+h12{
+    font-size: 56px;
+
+}
+#gif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+#gif_2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+
+#txt_exito{
+
+    font-size: 46px;
+    color: blue;
+}
+#txt_soon{
+
+    font-size: 46px;
+    color: blue;
+}
+#txt_masc{
+
+    font-size: 46px;
+    color: blue;
+}
+#txt_thank{
+
+    font-size: 46px;
+    color: blue;
+}
+
+.article-title {
+    font-size: 4rem;
+      font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    background: linear-gradient(to bottom, #0000FF 0%, #0080FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#menosgorda{
+
+    background-color: #38df5cbd;
+    
+  }
+
+  #cajagorda{
+
+    background-color: #38df5cbd;
+    border-radius: 10px;
+    border: 2px solid #32cc23;
+    
+  }
+
+  #registrate{
+
+    margin: auto;
+    background-color: #17b87a9d;
+    padding: 50px 250px 100px 50px;
+    border-radius: 10px;
+    border: 2px solid #32cc23;
+    margin-left: 50px;
+    margin-right: -150px;
+    
+
+}
+
+#bienvenida {
+
+    background-color: #e4451b;
+    padding: 7px 7px;
+    margin-bottom: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: #fd4637 5px 5px 10px;
+    text-shadow: white 2px 2px 3px;
+}
+
+#formregistro{
+    background-color: #38df5cbd;
+
+}
+
+#txtregitro{
+
+    background-color: #38df5cbd;
+
+}
+#log{
+    width: 25px;
+    height:25px;
+    display: inline;
+    
+
+}
+#inicio_caja{
+
+padding-right: 100px;
+margin-right: -100px;
+margin-left: -100px;
+}
+
+#quienes{
+
+    padding-right: 20px;
+}
+
+#nuevo_caja{
+
+    padding-right: 20px;
+    
+}
+
+#mostrar_caja{
+
+    padding-right: 20px;
+    margin-left: -30px;
+}
+
+
+#moscontacto_caja{
+
+    padding-right: 20px;
+    
+}
+  
+#contacto_caja{
+
+    padding-right: 20px;
+    
+}  
+  
+#login_caja{
+
+    padding-right: 20px;
+    margin-left: -20px;
+}  
+#registro{
+    width: 25px;
+    height:25px;
+    display: inline;
+
+}
+#delete{
+    width: 25px;
+    height:25px;
+    display: inline;
+
+}
+
+#cajalogin{
+    margin: 150px auto;
+    padding-bottom: 250px;
+
+}
+
+#cajalogin2{
+    padding-bottom: 250px;
+    background-color: #6be2c4;
+    border-radius: 10px;
+    box-shadow: #129b56 5px 5px 10px;
+    text-shadow: white 2px 2px 3px;
+}
+
+#ingresa{
+    background-color: #6be2c4;
+
+}
+#formlogin{
+
+    padding-top: 75px;
+}

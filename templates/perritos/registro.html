@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mis perris</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'perritos/css/estilo_perri.css' %}">
+  </head>
+  
+  <body>
+    <header>
+
+      <div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
+           
+              <a class="navbar-left" href="index.html">
+                <div class="logo-image">
+                      <img class ="img-responsive" src="{% static 'perritos/imagenes/logo.png'%}" class="img-fluid" id="logo">
+                </div>
+              </a>
+              <div class="navbar-header"> 
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar" id ="ralla"></span>
+                          <span class="icon-bar" id ="ralla1"></span>
+                         <span class="icon-bar" id ="ralla2"></span>               
+                        </button>
+                        
+              </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav pull-center">
+                          <li class="dropdown">
+                              <li id="inicio_caja"><a  href="{% url 'index'%}"><font color="white">Inicio</font></a></li>
+                              <li id="quienes_caja"><a href="{% url 'quienes'%}"><font color="white">Quienes somos</font></a></li>
+                              <li id="nuevo_caja"><a href="{% url 'nuevo'%}"><font color="white">Agregar adoptado!<img src="{% static 'perritos/imagenes/add.png' %} "id="add"></font></a></li>
+                              <li id="mostrar_caja"><a href="{% url 'mostrar2'%}"><font color="white">Mostrar adoptados</font></a></li>
+                              <li id="moscontacto_caja" ><a href="{% url 'mostrarcontacto'%}"><font color="white">Mostrar Contactos</font></a></li>
+                              <li id="contacto_caja"><a href="{% url 'contacto'%}"><font color="white">Contactanos</font></a></li>
+                              <li id="login_caja"><a href="{% url 'user_login'%}"><font color="white">Ingresar<img src="{% static 'perritos/imagenes/log.png' %} "id="log"></font></a></li>
+                          </li>
+                        </ul>
+                      </div>  
+          </div>
+
+   </header> 
+<div class="container" id="cajagorda">
+    <div class="jumbotron" id="menosgorda">
+      {% if registered %}
+        <h1>Te has registrado correctamente!</h1>
+        <br></br>
+        <br></br>
+        <p>Ahora puedes iniciar sesión!!</p>
+        <div class="text-center">
+                        
+            <a href="{% url 'user_login'%}">
+                <button type="button" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-user"></span> Login</button>
+            </a>
+        </div>
+
+      {% else %}
+        <h1 id="txtregitro">Regístrese aquí</h1>
+        <h3>Complete el formulario</h3>
+        <br></br>
+<div class="container" id="formregistro">
+    <div class="row"id="formregistro2" >
+        <div class="col-sm-6 mx-auto" style="margin-top: 70px"id="formregistro3">
+            <form enctype="multipart/form-data" method="POST" id="registrate">
+                {% csrf_token %}
+                    {{ user_form.as_p }}
+                    {{ profile_form.as_p }}
+          <div class="pull-right">
+            <button type="submit" class="btn btn-primary btn-primary" value="register"> Registrar</button>
+         </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+      {% endif %}
+    </div>
+</div>
+
+<footer>
+        <p>&copy; 2018 Desarrollo web y mobile</p>
+        <br>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--Insertamos el archivo JS compilado y comprimido -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="{% static 'perritos/js/validacion.js' %}"></script>
+  </body>
+</html>
